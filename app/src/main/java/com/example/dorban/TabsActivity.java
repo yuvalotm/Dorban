@@ -1,6 +1,8 @@
 package com.example.dorban;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -23,8 +25,10 @@ public class TabsActivity extends AppCompatActivity {
                 R.id.navigation_profile, R.id.navigation_all_events, R.id.navigation_my_events)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
+
+
 
 }

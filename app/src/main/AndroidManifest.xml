@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".TabsActivity"
-            android:label="@string/title_activity_tabs">
+            android:theme="@style/AppThemeNoAction"
+            >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

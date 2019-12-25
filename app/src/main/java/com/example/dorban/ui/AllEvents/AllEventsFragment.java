@@ -3,6 +3,8 @@ package com.example.dorban.ui.AllEvents;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -23,18 +25,14 @@ public class AllEventsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         homeViewModel =
                 ViewModelProviders.of(this).get(AllEventsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_all_events, container, false);
-        final TextView textView = root.findViewById(R.id.text_all_events);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(), "lala", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(v.getContext(), SearchActivity.class);
-                startActivity(intent);
-            }
-        });
+
         return root;
     }
+
+
+
 }
