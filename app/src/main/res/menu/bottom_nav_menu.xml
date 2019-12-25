@@ -8,12 +8,12 @@
 
     <item
         android:id="@+id/navigation_all_events"
-        android:icon="@drawable/all_events_icon"
+        android:icon="@drawable/search_icon"
         android:title="all events" />
 
     <item
         android:id="@+id/navigation_my_events"
-        android:icon="@drawable/search_icon"
+        android:icon="@drawable/my_events_icon"
         android:title="my events" />
 
 </menu>
