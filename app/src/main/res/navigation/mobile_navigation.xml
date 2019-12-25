@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_my_events">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.dorban.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_profile"
+        android:name="com.example.dorban.ui.AllEvents.AllEventsFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.dorban.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_all_events"
+        android:name="com.example.dorban.ui.profile.ProfileFragment"
+        android:label="all events"
+        tools:layout="@layout/fragment_all_events" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.dorban.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_my_events"
+        android:name="com.example.dorban.ui.MyEvents.MyEventsFragment"
+        android:label="my events"
+        tools:layout="@layout/fragment_my_events" />
 </navigation>

@@ -1,14 +1,14 @@
-package com.example.dorban.ui.home;
+package com.example.dorban.ui.AllEvents;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class AllEventsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public AllEventsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }
