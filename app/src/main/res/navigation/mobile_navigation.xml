@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.dorban.ui.AllEvents.AllEventsFragment"
+        android:name="com.example.dorban.ui.profile.ProfileFragment"
         android:label="profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_all_events"
-        android:name="com.example.dorban.ui.profile.ProfileFragment"
+        android:name="com.example.dorban.ui.AllEvents.AllEventsFragment"
         android:label="all events"
         tools:layout="@layout/fragment_all_events" />
 
