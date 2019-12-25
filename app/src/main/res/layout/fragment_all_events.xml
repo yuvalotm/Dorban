@@ -4,27 +4,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
     >
 
-    <RelativeLayout
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_card_view"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:elevation="5dp"
+        android:elevation="10dp"
         >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:src="@drawable/search_icon"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="חפש אירועים"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:alpha="0.5"
+                android:textColor="#000"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.5"
+                />
+        </RelativeLayout>
 
-    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/search_card_view"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>
