@@ -13,15 +13,17 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-
+        android:elevation="5dp"
         >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:src="@drawable/search_icon"
-
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             />
+
     </RelativeLayout>
 
 
